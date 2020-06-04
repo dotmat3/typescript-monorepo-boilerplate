@@ -1,0 +1,22 @@
+{
+	"name": "@test/test1",
+	"version": "1.0.0",
+	"main": "dist/index",
+	"types": "dist/index",
+	"files": [
+		"dist"
+	],
+	"license": "MIT",
+	"scripts": {
+		"build": "yarn run clean && yarn run compile",
+		"clean": "rimraf -rf dist tsconfig.build.tsbuildinfo",
+		"compile": "tsc -p tsconfig.build.json",
+		"prepublishOnly": "yarn run build"
+	},
+	"dependencies": {
+		"rimraf": "^3.0.2"
+	},
+	"devDependencies": {
+		"typescript": "^3.9.3"
+	}
+}

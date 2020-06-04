@@ -1,0 +1,15 @@
+{
+	"name": "typescript-monorepo-boilerplate",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"bootstrap": "lerna bootstrap --hoist",
+		"postinstall": "npm run bootstrap",
+		"clean": "lerna run clean",
+		"build": "lerna run build",
+		"pub": "lerna publish"
+	},
+	"devDependencies": {
+		"lerna": "^3.22.0"
+	}
+}
