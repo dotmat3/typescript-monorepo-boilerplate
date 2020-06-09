@@ -3,13 +3,17 @@
 	"private": true,
 	"license": "MIT",
 	"scripts": {
-		"bootstrap": "lerna bootstrap --hoist",
-		"postinstall": "npm run bootstrap",
+		"bootstrap": "lerna bootstrap",
 		"clean": "lerna run clean",
-		"build": "lerna run build",
-		"pub": "lerna publish"
+		"build": "lerna run build --stream",
+		"release": "lerna publish",
+		"postinstall": "yarn run bootstrap"
 	},
 	"devDependencies": {
-		"lerna": "^3.22.0"
-	}
+		"lerna": "^3.22.0",
+		"typescript": "^3.9.5"
+	},
+	"workspaces": [
+		"packages/*"
+	]
 }

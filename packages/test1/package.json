@@ -13,9 +13,6 @@
 		"compile": "tsc -p tsconfig.build.json",
 		"prepublishOnly": "yarn run build"
 	},
-	"dependencies": {
-		"rimraf": "^3.0.2"
-	},
 	"devDependencies": {
 		"typescript": "^3.9.3"
 	}

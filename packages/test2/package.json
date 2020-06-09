@@ -14,7 +14,6 @@
 		"prepublishOnly": "yarn run build"
 	},
 	"dependencies": {
-		"rimraf": "^3.0.2",
 		"@test/test1": "^1.0.0"
 	},
 	"devDependencies": {
