@@ -139,7 +139,7 @@ module.exports = {
     testPathIgnorePatterns: ["\\\\node_modules\\\\", "\\\\runtime_node_modules\\\\"],
 
     // The regexp pattern or array of patterns that Jest uses to detect test files
-    testRegex: ["/test/.*.test.(ts|tsx|js|jsx)"],
+    testRegex: ["/__tests__/.*.test.(ts|tsx|js|jsx)"],
 
     // This option allows the use of a custom results processor
     // testResultsProcessor: undefined,
