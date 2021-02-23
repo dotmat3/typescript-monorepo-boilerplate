@@ -1,5 +1,7 @@
+import number from "@test/test1";
+
 describe("Index:", () => {
     test("Initial test", () => {
-        expect(42).toBe(42);
+        expect(number).toBe(42);
     });
 });
